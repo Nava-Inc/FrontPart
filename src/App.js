@@ -5,6 +5,7 @@ import { useDataLayerValue } from "./DataLayer";
 import LoginSignUp from "./Components/LoginSignup/LoginSignup";
 import ProfilePage from "./Components/ProfilePage/ProfilePage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import MusicPlayerSlider from "./Components/HomePage/musicPlayCard.jsx";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/Home" element={<MusicApp />} />
           <Route path="/" element={<LoginSignUp />} />
           <Route path="/Profile" element={<ProfilePage />} />
+            <Route path="/card" element={<MusicPlayerSlider />} />
         </Routes>
       </Router>
     </div>

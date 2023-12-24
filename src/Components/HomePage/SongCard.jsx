@@ -93,8 +93,11 @@ const Container = styled.div`
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                background-color: rgba(0, 0, 0, 0.5);
-                cursor: pointer;
+                transition: 0.2s ease-in-out;
+                &:hover {
+                    background-color: rgba(0, 0, 0, 0.5);
+                    cursor: pointer;
+                }
             }
         }
     }

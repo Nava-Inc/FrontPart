@@ -38,8 +38,8 @@ const Container = styled.div`
         grid-template-columns: 15vw 85vw;
         height: 100%;
         width: 100%;
-        background: rgb(32, 87, 100) linear-gradient(transparent, rgba(16, 30, 40, 1));
-
+        //background: rgb(32, 87, 100) linear-gradient(transparent, rgba(16, 30, 40, 1));
+        background: #4e1ea9 linear-gradient(transparent,rgba(112,155,136));
         .body {
             height: 100%;
             width: 100%;
@@ -57,7 +57,11 @@ const Container = styled.div`
         }
     }
     .music_footer {
-        background-color: rgb(235,235,235);
+        display: flex;
+        //background-color: rgb(235,235,235);
+        
+       // padding-inline: 2px;
     }
+//<div style={{ padding: '0', alignItems:"center" }}>
 `;
 
