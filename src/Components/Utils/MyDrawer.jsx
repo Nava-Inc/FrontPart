@@ -1,6 +1,9 @@
 import { Drawer, Box, Typography, IconButton } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
+import { UserAvatar } from "./UserAvatar";
 import { useState } from "react";
+import { DrawerData } from "./DrawerData";
+import "../Utils/MyDrawer.css";
 
 export const MyDrawer = () => {
   const [isDrawerOpen, SetIsDrawerOpen] = useState(false);
@@ -20,11 +23,29 @@ export const MyDrawer = () => {
         open={isDrawerOpen}
         onClose={() => SetIsDrawerOpen(false)}
       >
-        <Box p={2} width="250px" textAlign="center" role="presentation">
-          <Typography variant="h6" component="div">
-            Side Panel
-          </Typography>
-        </Box>
+        <div className="MyDrawer">
+          <ul className="DrawerList">
+            <div className="UserAv">
+              <UserAvatar className="AvatarLogo" />
+              <div className="ProfileName">Harry Styles</div>
+            </div>
+            {DrawerData.map((val, key) => {
+              return (
+                <li
+                  key={key}
+                  className="DrawerRow"
+                  id={window.location.pathname === val.link ? "active" : ""}
+                  onClick={() => {
+                    window.location.pathname = val.link;
+                  }}
+                >
+                  <div id="icon">{val.icon}</div>
+                  <div id="title">{val.title}</div>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
       </Drawer>
     </>
   );
