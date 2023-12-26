@@ -1,0 +1,43 @@
+.ProfileContainer{
+    display:flex ;
+    flex-direction: column;
+    margin:auto;
+    margin-top: 50px;
+     background: #1e71a9; 
+    padding-bottom: 200px;
+    width:80%;
+}
+
+.ProfileBody{
+    display:flex ;
+    flex-direction: row;
+    margin-top: 100px;
+    margin: auto;
+    /* background: #127b95; */
+    padding-bottom: 100px;
+    width:70%;
+}
+
+.ArtistImage{
+    width:250px ;
+    height:200px ;
+    margin-right: 50px;
+     
+
+}
+
+.ArtistInfo{ 
+    flex: 30%;
+    font-size: larger;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 100px;
+}
+
+.ArtistName{
+    margin-bottom: 30px;
+}
+
+.ArtistDescription{
+
+    
+}
