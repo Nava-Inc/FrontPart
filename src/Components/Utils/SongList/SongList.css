@@ -1,0 +1,52 @@
+.ArtistSongList{
+    
+    height: 100%;
+    padding: 0;
+    width: 60%;
+    padding-left: 150px;
+   }
+   
+   
+.ArtistSongList .ArtistSongRow{
+     width: 100%;
+     height: 60px;
+     list-style-type: none;
+     margin: 0%;
+     background-color: #2F4050;
+     display: flex;
+     flex-direction: row;
+     color: #fff;
+     justify-content: center;
+     align-items: center;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+   }
+
+   .ArtistSongList .ArtistSongRow:hover{
+    cursor:pointer ;
+    background-color:#293846 ;
+}
+
+   .ArtistSongRow #musiclogo{
+    flex:20% ;
+    display: grid;
+    place-items: center;
+
+}
+   .ArtistSongRow #title{
+    flex:20% ;
+    
+
+}
+.ArtistSongRow #artist{
+    flex:20% ;
+
+}
+
+
+
+.ArtistSongRow #description{
+    flex:40% ;
+
+}
+
