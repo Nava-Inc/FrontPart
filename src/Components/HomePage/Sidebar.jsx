@@ -49,7 +49,7 @@ const Container = styled.div`
     .top_links {
         display: flex;
         flex-direction: column;
-
+        //font-size: ;
         .logo {
 
             text-align: center;

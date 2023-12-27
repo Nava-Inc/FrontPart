@@ -174,12 +174,12 @@ export default function PrimarySearchAppBar() {
         <Box sx={{ flexGrow: 1 }}>
          {/*"&":{color: "#4e1ea9"}}}>*/}
             <AppBar position="static"
-            sx={{"&": {backgroundColor:" #b4b3b0"}}}>
+            sx={{"&": {backgroundColor:" #b4b3b0"}, color:"black"}}>
                 <Toolbar>
                     <IconButton
                         size="large"
                         edge="start"
-                        color="inherit"
+                        color="black"
                         aria-label="open drawer"
                         sx={{ mr: 2 }}
                     >
@@ -193,9 +193,9 @@ export default function PrimarySearchAppBar() {
                     {/*>*/}
                     {/*    MUI*/}
                     {/*</Typography>*/}
-                    <Search>
+                    <Search >
                         <SearchIconWrapper>
-                            <SearchIcon />
+                            <SearchIcon  />
                         </SearchIconWrapper>
                         <StyledInputBase
                             placeholder="Search…"
@@ -230,8 +230,8 @@ export default function PrimarySearchAppBar() {
                     {/*        <AccountCircle />*/}
                     {/*    </IconButton>*/}
                     {/*</Box>*/}
-                    <Box className="padding" sx={{maxWidth: 200, display: 'flex', justifyContent: 'flex-end'}}>
-                        <img src={logo_music} alt='music-logo'  width='30%' height='auto'/>
+                    <Box className="padding" sx={{maxWidth: 150, display: 'flex', justifyContent: 'flex-end'}}>
+                        <img src={logo_music} alt='music-logo'  width='45%' height='auto'/>
                     </Box>
                     {/*<Box sx={{display: { xs: 'flex', md: 'none' } }}>*/}
                     {/*    <IconButton*/}

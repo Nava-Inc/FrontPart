@@ -72,7 +72,7 @@ const Container = styled.div`
     .background {
         display: flex;
         flex-direction: column;
-        width: 250px;
+        width: 68px;
         padding: 1rem;
         background-color: rgba(255, 255, 255, 0.8);
         backdrop-filter: blur(10px);
@@ -82,7 +82,8 @@ const Container = styled.div`
         .hight{
             position: relative;
             width: 100%;
-            height: 14.625rem;
+            //height: 14.625rem;
+            height: 100px;
             cursor: pointer;
             .point{
                 position: absolute ;
