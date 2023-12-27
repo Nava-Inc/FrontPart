@@ -1,4 +1,4 @@
-import {reducerCases} from "./Components/Constants";
+import {reducerCases} from "./Components/Constants.jsx";
 
 export const initialState = {
     user : null,

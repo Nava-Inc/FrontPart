@@ -24,6 +24,7 @@ import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
 import logo_music from "../Assets/logo_music.png";
+import MyDrawer from "../Utils/MyDrawer.jsx";
 // const Toolbar = {
 //     root: {
 //         backgroundColor : "#4e1ea9"
@@ -176,15 +177,16 @@ export default function PrimarySearchAppBar() {
             <AppBar position="static"
             sx={{"&": {backgroundColor:" #b4b3b0"}, color:"black"}}>
                 <Toolbar>
-                    <IconButton
-                        size="large"
-                        edge="start"
-                        color="black"
-                        aria-label="open drawer"
-                        sx={{ mr: 2 }}
-                    >
-                        <MenuIcon />
-                    </IconButton>
+                    <MyDrawer/>
+                    {/*<IconButton*/}
+                    {/*    size="large"*/}
+                    {/*    edge="start"*/}
+                    {/*    color="black"*/}
+                    {/*    aria-label="open drawer"*/}
+                    {/*    sx={{ mr: 2 }}*/}
+                    {/*>*/}
+                    {/*    <MenuIcon />*/}
+                    {/*</IconButton>*/}
                     {/*<Typography*/}
                     {/*    variant="h6"*/}
                     {/*    noWrap*/}
