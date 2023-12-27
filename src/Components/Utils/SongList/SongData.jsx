@@ -13,7 +13,7 @@ export const SongData = [
 
   {
     title: "title3",
-    Description: "A good song.",
+    Description: "Song description 2.",
     Artist: "Harry Styles",
   },
 
