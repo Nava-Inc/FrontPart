@@ -29,7 +29,7 @@ export default function Body() {
 
              {/*<div className="flex flex-wrap sm:justify-start justify-center gap-8">*/}
                 <div className= 'card'>
-                    {[1 , 2 , 3 ,4 ,5 ,6 ,7 ,8, 9, 10].map((song , i) =>(
+                    {[1 , 2 , 3 ,4 ,5 ,6 ,7 ,8, 9, 10 , 11 ,12,13 ,14 ,15, 16 ,17 ,18, 19 ,20 ].map((song , i) =>(
                         <SongCard
                         key={song.key}
                         song={song}

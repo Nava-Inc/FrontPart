@@ -5,7 +5,7 @@ import { useState } from "react";
 import { DrawerData } from "./DrawerData";
 import "../Utils/MyDrawer.css";
 
-export const MyDrawer = () => {
+export default function MyDrawer ()  {
   const [isDrawerOpen, SetIsDrawerOpen] = useState(false);
   return (
     <>

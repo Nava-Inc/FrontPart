@@ -72,7 +72,7 @@ const Container = styled.div`
     .background {
         display: flex;
         flex-direction: column;
-        width: 250px;
+        width: 68px;
         padding: 1rem;
         background-color: rgba(255, 255, 255, 0.8);
         backdrop-filter: blur(10px);
@@ -82,7 +82,8 @@ const Container = styled.div`
         .hight{
             position: relative;
             width: 100%;
-            height: 14.625rem;
+            //height: 14.625rem;
+            height: 100px;
             cursor: pointer;
             .point{
                 position: absolute ;
@@ -93,8 +94,11 @@ const Container = styled.div`
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                background-color: rgba(0, 0, 0, 0.5);
-                cursor: pointer;
+                transition: 0.2s ease-in-out;
+                &:hover {
+                    background-color: rgba(0, 0, 0, 0.5);
+                    cursor: pointer;
+                }
             }
         }
     }

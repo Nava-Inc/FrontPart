@@ -8,9 +8,9 @@ export default function MusicApp(){
     return(
         <Container>
             <div className = 'music_body'>
-                <Sidebar />
+                {/*<Sidebar />*/}
                 <div className= 'body'>
-                    <NavBar />
+                    <NavBar/>
                     <div className= 'body_content'>
                         <Body />
                     </div>
@@ -32,20 +32,23 @@ const Container = styled.div`
     overflow: hidden;
     display: grid;
     grid-template-rows: 85vh 15vh;
-
+    
     .music_body {
-        display: grid;
-        grid-template-columns: 15vw 85vw;
+        //display: grid;
+        //grid-template-columns: 15vw 85vw;
         height: 100%;
         width: 100%;
-        background: rgb(32, 87, 100) linear-gradient(transparent, rgba(16, 30, 40, 1));
-
+       // justify-content: center;
+        //font-size: medium;
+        //background: rgb(32, 87, 100) linear-gradient(transparent, rgba(16, 30, 40, 1));
+        background: #4e1ea9 linear-gradient(transparent,rgba(112,155,136));
         .body {
-            height: 100%;
+            height:100%;
             width: 100%;
             overflow: auto;
             text-align: center;
-
+            
+           // align-items:  ;
            /* &::-webkit-scrollbar {
                 width: 0.7rem;
                 max-height: 2rem;
@@ -57,7 +60,12 @@ const Container = styled.div`
         }
     }
     .music_footer {
-        background-color: rgb(235,235,235);
+        display: flex;
+        
+        //background-color: rgb(235,235,235);
+        
+       // padding-inline: 2px;
     }
+//<div style={{ padding: '0', alignItems:"center" }}>
 `;
 

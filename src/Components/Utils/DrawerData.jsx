@@ -29,7 +29,7 @@ export const DrawerData = [
   {
     title: "Songs",
     icon: <HeadphonesIcon />,
-    link: "./profile",
+    link: "./song",
   },
 
   {

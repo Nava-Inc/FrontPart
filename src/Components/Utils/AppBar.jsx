@@ -16,7 +16,7 @@ import NotificationsIcon from "@mui/icons-material/Notifications";
 import MoreIcon from "@mui/icons-material/MoreVert";
 import Typography from "@mui/material/Typography";
 import { useState } from "react";
-import { MyDrawer } from "./MyDrawer";
+import  MyDrawer  from "../Utils/MyDrawer.jsx";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
