@@ -26,7 +26,7 @@ function getWidgetSize(isSmallScreen) {
     return isSmallScreen ? '343' : '100';
 }
 const WallPaper = styled('div')({
-    position: 'absolute',
+    position: 'fixed',
     width: '100%',
     height: '100%',
     top: '67.5px',
@@ -108,6 +108,7 @@ export default function SongBody(){
     const isSmallScreen = useMediaQuery('(max-width:600px)');
     return(
         <Box>
+            <WallPaper/>
             <Box className="topbigspace" sx={{ width: '100%', overflow: 'hidden', display: "flex", marginTop: "2%"}}>
                 <Widget className="box" sx={{width: isSmallScreen ? '280px' : '343px'}}>
                     <Box className="icon-size" clone fontSize={{xsm: "1rem", sm: "1.5rem",}}>

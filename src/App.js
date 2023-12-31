@@ -8,6 +8,7 @@ import ArtistPage from "./Components/ArtistPage/ArtistPage.jsx";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MusicPlayerSlider from "./Components/SongPage/musicPlayCard.jsx";
 import SongPage from "./Components/SongPage/SongPage.jsx";
+import ProfileSettings from "./Components/ProfilePage/ProfileSettings.jsx";
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
           <Route path="/card" element={<MusicPlayerSlider />} />
           <Route path="/song" element={<SongPage />} />
             <Route path="/Artist" element={<ArtistPage />} />
+          <Route path="/profilesetting" element={<ProfileSettings/>} />
+
 
         </Routes>
       </Router>

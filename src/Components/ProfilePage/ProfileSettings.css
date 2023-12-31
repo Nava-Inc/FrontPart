@@ -1,0 +1,95 @@
+.settingContainer{
+    display:flex ;
+    flex-direction: column;
+    margin:auto;
+    margin-top: 50px;
+    /* background: linear-gradient(#2a1b3d, #44318d, #1d7857b9);  */
+    padding-bottom: 200px;
+    width:80%;
+}
+
+.settingBody{
+    display:flex ;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin: auto;
+    /* background: #127b95; */
+    padding-bottom: 10px;
+    padding-top: 50px;
+    width:70%;
+}
+
+.ArtistImage{
+    width:300px ;
+    height:250px ;
+    margin-right: 50px;
+    clip-path: circle();
+     
+
+}
+
+.ArtistInfo{ 
+    flex: 30%;
+    font-size: larger;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 100px;
+}
+
+.ArtistName{
+    margin-bottom: 30px;
+}
+
+.userinfo1{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+    gap: 15px;
+}
+
+.userinputs{
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    
+    
+}
+
+.userinput{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 60%;
+    height: 65px;
+    background: #e9e6e6;
+    border-radius: 6px;
+
+}
+
+.userinput img{
+margin: 0px 30px;
+}
+
+.userinput input {
+    height: 50px;
+    width: 80px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #797979;
+    font-size: 14px;
+}
+
+.userbuttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+
+}
+
