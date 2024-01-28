@@ -261,7 +261,8 @@ export default function SongBody(){
                 flexWrap: "wrap",
                 justifyContent: "center",
                 gap: "2rem" ,
-                marginTop: "1.25rem" }}>
+                marginTop: "1.25rem" ,
+                marginBottom:"5rem"}}>
                 {[1 , 2 , 3 ,4 ,5 ,6 ,7 ,8, 9, 10 , 11 ,12,13 ,14 ,15, 16 ,17 ,18, 19 ,20 ].map((song , i) =>(
                     <SongCard
                         key={song.key}
