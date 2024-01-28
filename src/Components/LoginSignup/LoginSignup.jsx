@@ -3,9 +3,29 @@ import "./LoginSignup.css";
 import user_icon from "../Assets/person.png";
 import email_icon from "../Assets/email.png";
 import password_icon from "../Assets/password.png";
+import axios from 'axios';
 
 const LoginSignup = () => {
   const [action, setAction] = useState("Sign Up");
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+
+  const handleLogin = () => { 
+    axios 
+      .post("https://29079ee6c05c7a.lhr.life/api/auth/login", { 
+        name : name,
+        email: email, 
+        password: password, 
+      }) 
+      .then((Response) => { 
+        localStorage.setItem("token", Response.data.token); 
+      }) 
+      .catch((e) => { 
+        setError("ایمیل یا رمز عبور اشتباه است"); 
+      }); 
+  };
 
   return (
     <div className="container">
@@ -20,7 +40,7 @@ const LoginSignup = () => {
         ) : (
           <div className="input">
             <img src={user_icon} alt="" />
-            <input type="text" placeholder="Name" />
+            <input type="text" placeholder="Name" value={name} onChange={(e) => setName(e.target.value)}/>
           </div>
         )}
 
@@ -47,6 +67,7 @@ const LoginSignup = () => {
           className={action === "Login" ? "submit gray" : "submit"}
           onClick={() => {
             setAction("Sign Up");
+            handleLogin();
           }}
         >
           Sign Up
