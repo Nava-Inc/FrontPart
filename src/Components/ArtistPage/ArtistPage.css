@@ -1,11 +1,16 @@
+.Container{
+    background: linear-gradient(#F9E795,#F96167);
+}
 .ArtistContainer{
     display:flex ;
     flex-direction: column;
-    margin:auto;
-    margin-top: 50px;
-     background: #1e71a9; 
+    /*margin:auto;*/
+    /*margin-top: 50px;*/
+     /*background: #1e71a9; */
+    /*background: #F96167;*/
+
     padding-bottom: 200px;
-    width:80%;
+    width:100%;
 }
 
 .ArtistBody{
