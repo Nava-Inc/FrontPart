@@ -52,6 +52,16 @@
 
 }
 
+.button1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin: auto;
+    width: 20%;
+    background: #2399c8;
+}
+
 .input img{
 margin: 0px 30px;
 }

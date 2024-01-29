@@ -41,7 +41,7 @@ export const DrawerData = [
   {
     title: "Artists",
     icon: <Person4Icon />,
-    link: "./Profile",
+    link: "./Artist",
   },
 
   {
