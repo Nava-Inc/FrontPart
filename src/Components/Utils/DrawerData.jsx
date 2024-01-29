@@ -21,33 +21,15 @@ export const DrawerData = [
   },
 
   {
-    title: "Events",
-    icon: <EventIcon />,
-    link: "./Home",
-  },
-
-  {
     title: "Songs",
     icon: <HeadphonesIcon />,
     link: "./song",
   },
 
   {
-    title: "Library",
-    icon: <LibraryMusicIcon />,
-    link: "./Profile",
-  },
-
-  {
     title: "Artists",
     icon: <Person4Icon />,
-    link: "./Profile",
-  },
-
-  {
-    title: "Favorites",
-    icon: <FavoriteIcon />,
-    link: "./Profile",
+    link: "./Artist",
   },
 
   {
